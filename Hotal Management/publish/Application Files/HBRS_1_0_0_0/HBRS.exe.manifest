@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.0" name="HBRS.exe" publicKeyToken="87648e6f18163275" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="HBRS" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="HBRS.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualBasic.PowerPacks.Vs" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HBRS.exe" size="1566208">
+      <assemblyIdentity name="HBRS" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>AiMDHyoU4PJxSofa9QVCxk0yPeM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="database.accdb" size="659456">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2yMvDdm5BJw4OQFS81NlQlrCXWg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="HBRS.exe.config" size="1624">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>h2dABixB/ynB0aB957itdH2n1+8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=PANKAJ-PC\PANKAJ" issuerKeyHash="fe01f52ab958005d933cb45bd06d3b5f1daf8ea3" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>IxRdyjvJ1NKTpqByaYmq3SNxgO8=</DigestValue></Reference></SignedInfo><SignatureValue>KswV/d6Z8HzT45sOWEUZMD1ZX8sZZKLPmVE4rir5WAM8sB/m6MeSY4H/olcMEDSkzgd4BuMBe7LwMQEwoqO+5DNINTSbwaWSuAiYVF7fxp+Fm9Yioj4WwnU/U1A+xJ1uImO7VtJWWWBVQYpl42AFPAtaubj29Vc+/DGteYG/Orw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>oBXWI1/1/7T9peYZd0JRIoVsoLl3Zrg1lUurirEtF0aVosvDMGeFmSvXW8LhbyIW2wJVaE7+c3pgh000O8HxLnog2VcrbxBsVLRESCKm2OoCkM7Zvrh4G0yxuJaUJ4VgItInTqXxdhpgLpAFRwNi6ZSaTskjEF92CMVh85H1yBM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ef807123ddaa896972a0a693d2d4c93bca5d1423" Description="" Url=""><as:assemblyIdentity version="1.0.0.0" name="HBRS.exe" publicKeyToken="87648e6f18163275" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PANKAJ-PC\PANKAJ</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>e9PLdGJMLaxHVGIxUkK3sE+l5Zs=</DigestValue></Reference></SignedInfo><SignatureValue>YShqwNF3WaXT4I3uNHYzL8Wuou/OZmyTQIqzkurcWE/IbxfDBvfCQP1cO9J6mZ8t7vRwqrlL0pMkddX7Xqs4pGwCMB/1iX2VrmI9bMKxrdYY6hf7ELPLdyXEEMM3xeL7IYlkST0bQ2/+31ApuP4C1ZVufhZoonfmXxQgb2g0i70=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>oBXWI1/1/7T9peYZd0JRIoVsoLl3Zrg1lUurirEtF0aVosvDMGeFmSvXW8LhbyIW2wJVaE7+c3pgh000O8HxLnog2VcrbxBsVLRESCKm2OoCkM7Zvrh4G0yxuJaUJ4VgItInTqXxdhpgLpAFRwNi6ZSaTskjEF92CMVh85H1yBM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQE5LBtnC1zbxK7VkyOgfTmjANBgkqhkiG9w0BAQUFADArMSkwJwYDVQQDHiAAUABBAE4ASwBBAEoALQBQAEMAXABQAEEATgBLAEEASjAeFw0xNDAxMjgwOTQ0MTJaFw0xNTAxMjgxNTQ0MTJaMCsxKTAnBgNVBAMeIABQAEEATgBLAEEASgAtAFAAQwBcAFAAQQBOAEsAQQBKMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCgFdYjX/X/tP2l5hl3QlEihWyguXdmuDWVS6uKsS0XRpWiy8MwZ4WZK9dbwuFvIhbbAlVoTv5zemCHTTQ7wfEueiDZVytvEGxUtERIIqbY6gKQztm+uHgbTLG4lpQnhWAi0idOpfF2GmAukAVHA2LplJpOySMQX3YIxWHzkfXIEwIDAQABMA0GCSqGSIb3DQEBBQUAA4GBACEnZTZQ1HdoDDiJ4zEr58YeBqi6riZ9F+e479Jw+3xUUx4AoORan5TRIxT49fG/kJosdDyX8UmKbTiZn+6ZuCPPEbf3I1OCB28oucuXHnGsptr5dJCmq3ZIOUgV0+vtHVNfJVPnJbiVQ3+DQ0bNEVFXOkhgdLuW5jqX/j6rSC+q</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
