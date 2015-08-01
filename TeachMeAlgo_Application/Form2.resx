@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>This iterative method, invented by Isaac Newton (Isaak Newton) about 1664, however, this method is sometimes referred to by the Newton-Raphson (Raphson), as Raphson invented the same algorithm a few years later Newton, but his article was published much earlier.
+
+The problem is as follows. Given the equation:
+
+ f (x) = 0. 
+
+Required to solve this equation precisely, to find one of its roots (assuming the root exists). It is assumed that f (x)continuous and differentiable on the interval [A; b].
+
+
+
+Algorithm
+
+
+The input parameters of the algorithm, in addition to function f (x), is also a first approximation - some x_0from which the algorithm starts to go.
+
+Suppose we have calculated x_i, we calculate x_ {i + 1}as follows. Draw a tangent to the graph of the function f (x)at the point x = x_i, and find the point of intersection of this tangent with the x-axis. x_ {i + 1}set equal to the found point, and repeat the entire process from the beginning.
+
+It is easy to obtain the following formula:
+
+ x_ {i + 1} = x_i - \ frac {f (x_i)} {f ^ \ prime (x_i)}. [...]
+
+Intuitively, if the function f (x)is enough "good" (smooth), and x_iis close enough to the roots, then x_ {i + 1}it will be closer to the desired root.
+
+The rate of convergence is quadratic , which, relatively speaking, means that the number of accurate digits in the approximate value x_idoubles with each iteration.
+
+Application to calculate the square root
+Consider the example of Newton's method of calculating the square root.
+
+If we substitute f (x) = \ sqrt {x}, the expression after simplification we get:
+
+ x_ {i + 1} = \ frac {x_i + \ frac {n} {x_i}} {2}. 
+
+The first version of the typical tasks - when given a fractional number n, and it is necessary to calculate its root with some accuracy \ Rm EPS:
+
+double n;
+cin &gt;&gt; n;
+const double EPS = 1E-15;
+double x = 1;
+for (;;) {
+	double nx = (x + n / x) / 2;
+	if (abs (x - nx) &lt; EPS)  break;
+	x = nx;
+}
+printf ("%.15lf", x);
+Another common version of the problem - when you want to find the root of an integer (for the ngreatest find xis that x ^ 2 \ le n). Here we have a little bit to change the stop condition of the algorithm, as it can happen that xwill start "jumping" next response. Therefore, we add a condition that if the value xhas decreased from the previous step and the current step attempts to increase, the algorithm must be stopped.
+
+int n;
+cin &gt;&gt; n;
+int x = 1;
+bool decreased = false;
+for (;;) {
+	int nx = (x + n / x) &gt;&gt; 1;
+	if (x == nx || nx &gt; x &amp;&amp; decreased)  break;
+	decreased = nx &lt; x;
+	x = nx;
+}
+cout &lt;&lt; x;</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>Required to calculate the value of the definite integral:
+
+ \ Int_a ^ bf (x) dx 
+
+The solution described here, was published in one of the theses of Thomas Simpson (Thomas Simpson) in 1743
+
+Formula Simpson
+
+May n- a natural number. We divide the interval of integration [a; b]on 2nequal parts:
+
+ x_i = a + ih, ~~ i = 0 \ ldots 2n, 
+ h = \ frac {ba} {2n}. 
+
+Now we calculate the integral separately for each of the segments [X_ {2i-2}, x_ {2i}], i = 1 \ ldots n, and then add all the values.
+
+So, let us consider the next segment [X_ {2i-2}, x_ {2i}], i = 1 \ ldots n. Replace the function of f (x)a parabola on it, passing through 3 points (X_ {2i-2}, x_ {2i-1}, x_ {2i}). This parabola always exists and is unique. It can be found analytically, then there will be only integrated expression for it, and we finally obtain:
+
+ \ Int_ {x_ {2i-2}} ^ {x_ {2i}} f (x) dx = \ left (f (x_ {2i [...]
+
+Adding these values ​​in all segments, we obtain the final formula of Simpson :
+
+ \ Int_a ^ bf (x) dx = \ left (f (x_0) + 4 f (x_1) + 2 f [...]
+
+Error
+
+The error given by Simpson's formula, do not exceed the value of:
+
+ \ Frac {1} {180} h ^ 4 (b - a) \ max_ {a \ le x \ le b [...]
+
+Thus, the error is of the order as a reduction O (n ^ 4).
+
+Realization
+
+Here f (x)- some user-defined function.
+
+double a, b; 
+const int N = 1000*1000; 
+double s = 0;
+double h = (b - a) / N;
+for (int i=0; i&lt;=N; ++i) {
+	double x = a + h * i;
+	s += f(x) * ((i==0 || i==N) ? 1 : ((i&amp;1)==0) ? 2 : 4);
+}
+s *= h / 3;
+ </value>
+  </data>
+</root>
