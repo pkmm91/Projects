@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <assemblyIdentity name="eslambook.application" version="1.0.0.0" publicKeyToken="86ebd9ebe8c25994" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description asmv2:publisher="Microsoft" asmv2:product="eslambook" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <deployment install="true" mapFileExtensions="true">
+    <subscription>
+      <update>
+        <beforeApplicationStartup />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="http://pankaj-pc/eslambook/eslambook.application" />
+  </deployment>
+  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+    <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
+  </compatibleFrameworks>
+  <dependency>
+    <dependentAssembly dependencyType="install" codebase="Application Files\eslambook_1_0_0_0\eslambook.exe.manifest" size="7025">
+      <assemblyIdentity name="eslambook.exe" version="1.0.0.0" publicKeyToken="86ebd9ebe8c25994" language="neutral" processorArchitecture="x86" type="win32" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>2ENNqdFtiw+BmViu8SxgEJnk3g8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=PANKAJ-PC\PANKAJ" issuerKeyHash="3710f15446ede23b2d49958947cb190453e3a7cf" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>D572rwx3MSVtl0sPB3C74K/dctc=</DigestValue></Reference></SignedInfo><SignatureValue>dg2rVgYSLwBJHfK8k9rwRYA5x9EiGttoUjlsfF8aApu5uhLCuTSuSMB+2FVGaiHhMC+6u7tWMeuSYoRN6pdHl2WAVwDysUG2NIYtMmkPjm5pmfznAdDG98y454Qk7RSnGg0BC8HfOiWhKuzs0koBM4z80enhDsZCvgAfIeKSqdY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>v4ghGCIUnjYj2xMje+7KatlbUq51leUPP52/vowTCmO78wdn2ZKbcHBAiKwOrGzxcXqCQ0jCrYfUdL3tUPqhHlzZuGsd71GT+LbBACct3bHbYzd+C5t8Kwtk4A7I8b0B1i1KiV/vSV8SvzZpEEbuVya9OfgWL5SjE7sIXUkcTOk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d772ddafe0bb70070f4b976d2531770caff69e0f" Description="" Url=""><as:assemblyIdentity name="eslambook.application" version="1.0.0.0" publicKeyToken="86ebd9ebe8c25994" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PANKAJ-PC\PANKAJ</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>SnazwFlwRLKUVh5QDiqt0BVcmXM=</DigestValue></Reference></SignedInfo><SignatureValue>Bj5477BC8n3adPSCsOViXu+MW/srq5eJ1oSUguAkwhg0VmRZHIRUcAXOLz9TC395PO1gykY1SBazYSG0A5rIXl5J+8E2naiH2PVW4KJGWH7HHoJNEhSczH7qNx6mKgnBcXYU3F2h/VLKY1NV7Lu3HUgRNvBJxvE6VYhZtrdUVUo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>v4ghGCIUnjYj2xMje+7KatlbUq51leUPP52/vowTCmO78wdn2ZKbcHBAiKwOrGzxcXqCQ0jCrYfUdL3tUPqhHlzZuGsd71GT+LbBACct3bHbYzd+C5t8Kwtk4A7I8b0B1i1KiV/vSV8SvzZpEEbuVya9OfgWL5SjE7sIXUkcTOk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQbq6EZlesSZhF2LOVRYrOdDANBgkqhkiG9w0BAQUFADArMSkwJwYDVQQDHiAAUABBAE4ASwBBAEoALQBQAEMAXABQAEEATgBLAEEASjAeFw0xNDAyMDgxNjA3MDNaFw0xNTAyMDgyMjA3MDNaMCsxKTAnBgNVBAMeIABQAEEATgBLAEEASgAtAFAAQwBcAFAAQQBOAEsAQQBKMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/iCEYIhSeNiPbEyN77spq2VtSrnWV5Q8/nb++jBMKY7vzB2fZkptwcECIrA6sbPFxeoJDSMKth9R0ve1Q+qEeXNm4ax3vUZP4tsEAJy3dsdtjN34Lm3wrC2TgDsjxvQHWLUqJX+9JXxK/NmkQRu5XJr05+BYvlKMTuwhdSRxM6QIDAQABMA0GCSqGSIb3DQEBBQUAA4GBALn5hghgwWXOAliYvcpJKzZpfzFjIR++c0J++9CVfzNffUSwkTLZ3HHIugmvVkSdIUFUCvvYnYtnZ9ynBTY80Vy6HxBHFAkWIjNqrX/F7dxtzKKXCJwEobE719frjNqPDTPXgERodYYDKbQrhAJ7/Z5K/YGr9jpYrrM8bnZqylPI</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
