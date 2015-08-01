@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>NIT SRINAGAR </title>
+    <style>
+      html, body, #map-canvas {
+        height: 81%;
+		width:85%;
+        margin: 20px;
+        padding: 0px
+      }
+      #panel {
+	  top:160px;
+        position: absolute;
+        background-color: #fff;
+        padding: 0px;
+        border: 1px solid #999;
+		
+      }
+	  #grid{
+	  
+        
+      
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        float:right;
+	  }
+	  #grid a{
+	  font-size:20px;
+	  text-decoration:none;
+	  }
+	  #map{
+	  width:70%;
+	    height: 100%;
+        margin: 20px;
+        padding: 0px;
+		float:left;
+	  }
+	  #hd
+{
+  color:black;
+  background-color:red;
+  font-size:24px;
+
+}
+	  
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.1.min.js"></script>
+	<script>
+var directionsDisplay;
+var directionsService = new google.maps.DirectionsService();
+var map;
+
+function initialize() {
+  directionsDisplay = new google.maps.DirectionsRenderer();
+  var nit = new google.maps.LatLng(34.124175,74.841209);
+  var mapOptions = {
+    zoom:7,
+    center: nit
+  }
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  directionsDisplay.setMap(map);
+}
+
+function calcRoute() {
+  var start = document.getElementById('start').value;
+  var end = document.getElementById('end').value;
+  var selectedMode = document.getElementById("mode").value;
+
+  var request = {
+      origin:start,
+      destination:end,
+      travelMode: google.maps.TravelMode[selectedMode]
+  };
+  directionsService.route(request, function(response, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+      directionsDisplay.setDirections(response);
+    }
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>	
+  </head>
+  <body bgcolor="white">
+  <div id="hd"><h3 style="color:black">NIT Srinagr Route</h3>
+</div>  
+ <div id="panel">
+ <strong><font text color="red"><b>SHOW ROUTE -></b></font></strong>
+    <b>Start: </b>
+    <select id="start" onchange="calcRoute();">
+       <option value="34.1264311,74.8409732">IT BRANCH</option>
+	  <option value="34.125453,74.839176">MECHANICAL BRANCH</option>
+	  <option value="34.125937,74.840957">COMPUTER SCIENCE BRANCH</option>
+	  <option value="34.12544,74.840874">ELECTRONICS AND COMMUNICATION BRANCH</option>
+	  <option value="34.125777,74.840292">CHEMICAL BRANCH</option>
+	  <option value="34.125612,74.840241">METALLURGY BRANCH</option>
+	  <option value="34.12491,74.839898">ELECTRICAL BRANCH</option>
+	  <option value="34.125034,74.839447">CIVIL BRANCH</option>
+	  <option value="34.123235,74.840125">HUMANITIES DEPT</option>
+	  <option value="34.123379,74.840686">INDUS HOSTEL</option>
+	  <option value="34.123086,74.841319">CHENAB HOSTEL</option>
+	  <option value="34.123181,74.841815">JHELUM HOSTEL</option>
+	  <option value="34.122768,74.843017">DAL HOSTEL</option>
+	  <option value="34.122391,74.840667">TAWI HOSTEL</option>
+	  <option value="34.127007,74.841995">GIRLS HOSTEL</option>
+	  <option value="34.124397, 74.8422323">GROUND</option>
+	  <option value="34.124467, 74.839739">LECTURE HALLS</option>
+	  <option value="34.124225,74.83939">LIBRARY</option>
+	  <option value="34.124656, 74.840093">HIGH-VOLTAGE LAB</option>
+	  <option value="34.123446,74.839659">MEDICAL UNIT</option>
+	  <option value="34.125713,74.840718">COMPUTER CENTER</option>
+	  <option value="34.124404, 74.839061">DIRECTOR OFFICE</option>
+	  <option value="34.1260013,74.8397928">WORKSHOP</option>
+	  <option value="34.126454,74.839007">WATER</option>
+	  <option value="34.123826,74.840195">HOSTEL OFFICE</option>
+	  <option value="34.123693,74.839972">POWER HOUSE</option>
+	  <option value="34.12517,74.837666">NIT ENTERENCE</option>
+	  <option value="34.124867 ,74.840949">GENERAL STORE</option>
+	  <option value="34.122651,74.840168">CANTEEN</option>
+	  <option value="34.123481,74.838685">FOOD POINT</option>
+	  <option value="34.123061,74.840855">RECREATION CENTER</option>
+	  <option value="34.123452,74.842746">MOSQUE</option>
+	   <option value="34.124749,74.840452">DRAWING HALLS</option>
+    </select>
+    <b>End: </b>
+    <select id="end" onchange="calcRoute();">
+      <option value="34.1264311,74.8409732">IT BRANCH</option>
+	  <option value="34.125453,74.839176">MECHANICAL BRANCH</option>
+	  <option value="34.125937,74.840957">COMPUTER SCIENCE BRANCH</option>
+	  <option value="34.12544,74.840874">ELECTRONICS AND COMMUNICATION BRANCH</option>
+	  <option value="34.125777,74.840292">CHEMICAL BRANCH</option>
+	  <option value="34.125612,74.840241">METALLURGY BRANCH</option>
+	  <option value="34.12491,74.839898">ELECTRICAL BRANCH</option>
+	  <option value="34.125034,74.839447">CIVIL BRANCH</option>
+	  <option value="34.123235,74.840125">HUMANITIES DEPT</option>
+	  <option value="34.123379,74.840686">INDUS HOSTEL</option>
+	  <option value="34.123086,74.841319">CHENAB HOSTEL</option>
+	  <option value="34.123181,74.841815">JHELUM HOSTEL</option>
+	  <option value="34.122768,74.843017">DAL HOSTEL</option>
+	  <option value="34.122391,74.840667">TAWI HOSTEL</option>
+	  <option value="34.127007,74.841995">GIRLS HOSTEL</option>
+	  <option value="34.124397, 74.8422323">GROUND</option>
+	  <option value="34.124467, 74.839739">LECTURE HALLS</option>
+	  <option value="34.124225,74.83939">LIBRARY</option>
+	  <option value="34.124656, 74.840093">HIGH-VOLTAGE LAB</option>
+	  <option value="34.123446,74.839659">MEDICAL UNIT</option>
+	  <option value="34.125713,74.840718">COMPUTER CENTER</option>
+	  <option value="34.124404, 74.839061">DIRECTOR OFFICE</option>
+	  <option value="34.1260013,74.8397928">WORKSHOP</option>
+	  <option value="34.126454,74.839007">WATER</option>
+	  <option value="34.123826,74.840195">HOSTEL OFFICE</option>
+	  <option value="34.123693,74.839972">POWER HOUSE</option>
+	  <option value="34.12517,74.837666">NIT ENTERENCE</option>
+	  <option value="34.124867 ,74.840949">GENERAL STORE</option>
+	  <option value="34.122651,74.840168">CANTEEN</option>
+	  <option value="34.123481,74.838685">FOOD POINT</option>
+	  <option value="34.123061,74.840855">RECREATION CENTER</option>
+	  <option value="34.123452,74.842746">MOSQUE</option>
+	   <option value="34.124749,74.840452">DRAWING HALLS</option>
+	   </select>
+	   </div>
+<br></br>	  
+<br></br>	
+<br></br>	 
+<br></br>	
+<br></br>	
+<br></br>	
+<br></br>	
+
+	<div>
+<strong><font text color="red">MODE OF TRAVEL: </font></strong>
+<select id="mode" onchange="calcRoute();">
+  <option value="DRIVING">DRIVING</option>
+  <option value="WALKING">WALKING</option>
+</select>
+</div>
+    <div id="map-canvas"></div>
+	 <div id="map" style="width: 400px; height: 400px;"></div>
+<script type="text/javascript">
+var locations = [
+['IT BRANCH',34.1264311,74.8409732],
+['MECHANICAL BRANCH', 34.125453,74.839176],
+['COMPUTER SCIENCE BRANCH', 34.125937,74.840957],
+['ELECTRONICS AND COMMUNICATION BRANCH', 34.12544,74.840874],
+['CHEMICAL BRANCH',34.125777,74.840292],
+['METALLURGY BRANCH', 34.125612,74.840241],
+['ELECTRICAL BRANCH', 34.12491,74.839898],
+['CIVIL BRANCH', 34.125034,74.839447],
+['HUMANITIES DEPT', 34.123235,74.840125],
+['INDUS HOSTEL', 34.123379,74.840686],
+['CHENAB HOSTEL', 34.123086,74.841319],
+['JHELUM HOSTEL', 34.123181,74.841815],
+['DAL HOSTEL',34.122768,74.843017],
+['TAWI HOSTEL', 34.122391,74.840667],
+['GIRLS HOSTEL', 34.127007,74.841995],
+['GROUND', 34.124397, 74.8422323],
+['LECTURE HALLS', 34.124467, 74.839739],
+['HIGH-VOLTAGE LAB', 34.124656, 74.840093],
+['MEDICAL UNIT', 34.123446,74.839659],
+['COMPUTER CENTER', 34.125713,74.840718],
+['DIRECTOR OFFICE', 34.124404, 74.839061],
+['WORKSHOP', 34.1260013,74.8397928],
+['WATER', 34.1260013,74.8397928],
+['HOSTEL OFFICE', 34.123826,74.840195],
+['POWER HOUSE', 34.123693,74.839972],
+['NIT ENTERENCE', 34.12517,74.837666],
+['GENERAL STORE', 34.124867 ,74.840949],
+['CANTEEN',34.122651,74.840168],
+['FOOD POINT', 34.123481,74.838685],
+['RECREATION CENTER', 34.123061,74.840855],
+['MOSQUE', 34.123452,74.842746],
+['DRAWING HALLS',34.124749,74.840452]
+];
+ 
+var map = new google.maps.Map(document.getElementById('map'), {
+zoom: 10,
+center: new google.maps.LatLng(-39.92, 151.25),
+mapTypeId: google.maps.MapTypeId.ROADMAP
+});
+ 
+var infowindow = new google.maps.InfoWindow();
+ 
+var marker, i;
+var markers = new Array();
+ 
+for (i = 0; i < locations.length; i++) {
+marker = new google.maps.Marker({
+position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+map: map
+});
+ 
+markers.push(marker);
+ 
+google.maps.event.addListener(marker, 'click', (function(marker, i) {
+return function() {
+infowindow.setContent(locations[i][0]);
+infowindow.open(map, marker);
+}
+})(marker, i));
+}
+ 
+function AutoCenter() {
+// Create a new viewpoint bound
+var bounds = new google.maps.LatLngBounds();
+// Go through each...
+$.each(markers, function (index, marker) {
+bounds.extend(marker.position);
+});
+// Fit these bounds to the map
+map.fitBounds(bounds);
+}
+AutoCenter();
+</script> 
+  </body>
+</html>
+
